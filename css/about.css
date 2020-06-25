@@ -1,0 +1,77 @@
+body {
+    background-color: silver;
+}
+.logo {
+  text-align: center;
+  
+}
+.logo p{
+    color:#545454;
+}
+.nav{
+    font-size: 20px;
+    text-align: center;
+    margin:0px;
+    height: 40px;
+    background-color: #545454;
+    
+}
+.nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 40px;
+}
+.myBrand  {
+    width: max-content;
+    height: 650px;
+    margin-left: 185px;
+}
+
+
+.myBrand p{
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 25px;
+    color: gray;
+    width: 500px;
+    height: 500px;
+    float: right;
+}
+.myBrand img{
+    margin-top: 25px;
+
+}
+
+
+
+.myBrand h3{
+    font-size: 30px;
+    color:#545454; 
+    text-align: center;
+
+}
+
+.rightHand h1{
+    color:#545454; 
+    text-align: center;
+    
+}
+.main{
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+    color: #545454; 
+    margin-left: 175px;
+}
+.main .mySkill{
+    float:left;
+    width:400px;
+    height:auto;
+}
+.main .program{
+    float:left;
+    width:400px;
+    height:auto;
+    margin-left: 50px;
+}

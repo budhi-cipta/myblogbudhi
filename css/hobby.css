@@ -1,0 +1,73 @@
+body {
+    background-color: silver;
+}
+.logo {
+  text-align: center;
+  
+}
+.logo p{
+    color:#545454;
+}
+.nav{
+    font-size: 20px;
+    text-align: center;
+    margin:0px;
+    height: 40px;
+    background-color: #545454;
+    
+}
+.nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 40px;
+}
+
+h1{
+    color:  tomato;
+}
+.main{
+    text-align:center;
+    margin:15px ;
+    margin-left: 200px;
+
+}
+.main .hoby {
+    background-color: #545454;
+    width: 250px;
+    height: 310px;
+    text-align: center; 
+    padding-top: 0px;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    color: teal;
+ }
+
+
+.main .hoby2{
+    background-color: #545454;
+    width: 250px;
+    height: 310px;
+    text-align: center; 
+    padding-top: 0px;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    color: teal;
+}
+
+
+.main .hoby3{
+    background-color:#545454;
+    width: 250px;
+    height: 310px;
+    text-align: center; 
+    padding-top: 0px;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    color:teal
+    
+}
+.main p{
+    padding:0px 5px 0px 5px ;
+    color: whitesmoke;
+}
