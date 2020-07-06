@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header li a {
+    display: flex;
+    color: snow;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+   
+  }
+  .menu-wrapper{
+      background-color: black;
+  }
+  .header{
+      background-color: black;
+      
+  }
+   
+  .header li a:hover {
+
+  }
+  .header .menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+  }
+  .header .logo {
+    color: #fff;
+    display: flex;
+    float: left;
+    font-size: 1.5em;
+    padding: 12px 20px;
+    text-decoration: none;
+  
+  }
+  ul .menu{
+      background-color: black;
+  }
+  .header .menu {
+    display: flex;
+    justify-content: space-between;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    
+  }
+   
+  /* menu icon */
+   
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+   
+  .header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+   
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+   
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+   
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+   
+  /* menu btn */
+   
+  .header .menu-btn {
+    display: none;
+  }
+   
+  .header .menu-btn:checked ~ .menu {
+    max-height: 340px;
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+body{
+    background-size: 100%;
+    background-repeat : no-repeat;
+    font-family: sans-serif;
+}
+/*
+nav{
+    display: flex;
+    background-color:black;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: snow;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+*/
+
+.logo img{
+    width: 20px;
+}
+/*
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 70%;
+    justify-content: space-between;
+}
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: snow;
+}
+*/
+main{
+    background-image: url(image/richard-lee-MXjOJbnkajU-unsplash.jpg);
+    display: flex;
+    justify-content: space-around;  
+    background-size: cover;
+    width: 100%;
+    flex-direction: column;
+}
+main .sesi1{
+    display: flex;
+    justify-content: center;
+}
+
+.sesi1 p{
+    align-self: center;
+    color: snow;
+}
+.sesi1 img{
+    width: 300px;
+    align-self: center;
+    padding-top: 120px;
+    padding-bottom: 25px;
+}
+.sesi2{
+    display: flex;
+    justify-content: space-around;
+    background :linear-gradient(to bottom, rgba(5,5,5,0) 0%,rgba(5,5,5,1) 100%);
+    padding: 15px;   
+}
+.sesi2 img{
+    padding-top: 75px;
+}
+.sesi2  h4{
+    color: snow;
+    text-align: center;
+    justify-content: baseline;
+    align-items: center;
+} 
+.sesi2 .gambar2 h4{
+    color: snow;
+    justify-content: baseline;
+    
+} 
+.sesi2 .gambar1 button{
+    margin-left: 33px;
+}
+.sesi2 .gambar2 button{
+    margin-left: 50px;
+}
+.sesi2 .gambar3 button{
+    margin-left: 50px;
+}
+.sesi2 .gambar4 button{
+    margin-left: 38px;
+}
+.button1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+ .button1:hover span {
+    padding-right: 25px;
+  }
+  
+ .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+ .sesi3 {
+    width: 100%;
+    background-image: url(image/BENAR.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+   
+ }
+ .atas {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 25px;
+ }
+ .atas h2 {
+    color: snow;
+    
+ }
+ .sesi3 .atas p{
+    color: snow;
+    text-align: center;
+ }
+ .bawah{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;   
+ }
+ .team1 {
+    width: 200px;
+    height: 350px;
+    color: snow;
+    display: flex;
+    flex-direction: column;
+    
+}
+.team1 p{
+    text-align: center;
+}
+.team1 h3{
+    text-align: center;
+    padding: 5px;
+}
+.team2 {
+    width: 200px;
+    height: 350px;
+    color: snow;
+    display: flex;
+    flex-direction: column; 
+}
+.team2 p {
+    text-align: center;
+}
+.team2 h3{
+    text-align: center;
+    padding: 5px;
+}
+.team3{
+    width: 200px;
+    height: 350px;
+    color: snow;
+    display: flex;
+    flex-direction: column; 
+}
+.team3 h3{
+    text-align: center;
+    padding: 5px;
+}
+.team3 p{
+    text-align: center;
+}
+.sesi4{
+    display: flex;
+    justify-content: space-around;
+    background-color:black;
+    width: 100%;
+    color: snow;
+    padding: ;
+}
+.sesi4 .tengah li{
+    list-style: none;
+    
+}
+.sesi4 .kanan h3{
+    padding-left: 8px;
+}
+.sesi4 .kanan img{
+    width: 30px;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(50%);
+}
+.sesi4 .kanan1 img{
+    width:30px ;
+    padding: 8px;  
+}
+footer{
+    background-color: black;
+    width:100%;
+    
+    
+}
+.logox{
+    background-color: rgb(70, 70, 70);
+    height: 120px;
+    display: flex;
+    justify-content:center;
+}
+.logox img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.logox h5{
+   color: snow;
+   font-size: 15px;
+    padding: 35px 10px;
+   display: flex;
+   justify-content: center;
+
+}
+
+@media screen and (max-width:500px){
+    .header ul{
+        background-color: #fff;
+    }  
+    .header li a {
+    padding: 15px;
+    border-bottom: 1px dotted #ddd;
+  
+  }
+
+    
+    nav{
+        display: flex;
+        background-color:black;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        color: snow;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        flex-direction: row;
+    }
+    main{
+        background-image: url(image/richard-lee-MXjOJbnkajU-unsplash.jpg);
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        width: 100%;
+        flex-wrap:wrap;
+        flex-direction: column;
+        
+    }
+    main .sesi1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+    
+    .sesi1 img{
+        width: 300px;
+        align-self: center;
+        padding-top: 120px;
+        padding-bottom: 25px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .sesi1 p{
+        align-self: center;
+        color: snow;
+        flex-direction: column;
+
+    }
+    nav ul li a {
+        list-style: none;
+        text-decoration: none;
+        color: snow;
+    }
+    nav ul{
+        display: block;
+        list-style: none;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .sesi2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sesi3{
+        display: flex;
+        flex-direction: column;
+    }
+    .sesi4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .kiri{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bawah{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 25px;   
+        flex-direction: column;
+        align-items: center;
+     }
+    .logox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .kanan1{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kanan1 .icon {
+        display: flex;
+    }
+    .kanan{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .kanan .icon {
+        display: flex;
+        align-items: center;
+    }
+    .tengah{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tengah .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sesi1 p{
+        padding: 20px 30px;
+        text-align: center;
+    }
+    .logox h5{
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .logox img{
+        margin-top: 20px;
+    }
+  
+}
+
+@media screen and (min-width: 501px) and (max-width:768px){
+    
+        .menu-wrapper{
+            background: #414141;
+            height: 55px;
+            line-height: 55px;
+            width: 100%;
+        }
+      .header li {
+        float: left;
+      }
+        .header .logo{
+            line-height: 1;
+        }
+      .header li a {
+        color: #fff;
+        padding: 0px 30px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+      
+      }
+      .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .header .menu-icon {
+        display: none;
+      }
+    }
+
+
+
+
+
+    nav{
+        display: flex;
+        background-color:black;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        color: snow;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        flex-direction: row;
+    }
+    main{
+        background-image: url(image/richard-lee-MXjOJbnkajU-unsplash.jpg);
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        width: 100%;
+        flex-wrap:wrap;
+        flex-direction: column;
+        
+    }
+    .sesi3 {
+        width: 100%;
+        background-image: url(image/BENAR.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+     }
+    .sesi2{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .bawah{
+        display: flex;
+        flex-direction: column;
+    }
+    .sesi1{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .sesi1 p{
+        padding: 20px 30px;
+        text-align: center;
+    }
+    .sesi3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .sesi4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .kanan{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        
+    }
+    .kanan1{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+    
